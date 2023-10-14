@@ -10,6 +10,10 @@ a {
     cursor: pointer;
 }
 
+a:hover {   /*Underline while hovering hypertext*/
+    text-decoration: underline;
+}
+
 header {
     width: 100%;
     height: 60px;
@@ -24,7 +28,7 @@ header nav .nav-right-section {
     width: 250px;
     height: auto;
     display: flex;
-    list-style-type: none; /*Para quitar los puntos de la lista*/
+    list-style-type: none; 
     justify-content: center;
     align-items: center;
 }
@@ -130,3 +134,50 @@ main .main-buttons button:hover {
     box-shadow: 0 1px 1px #000001;
     color: #222;
     }
+
+footer div { 
+    width: 100%;
+    height: 50px;
+    position: absolute; /*Make it absolute*/
+    bottom: 0%; /*To the bottom*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Divides into two columns*/
+    align-items: center; /*Move Items to the center of the grid*/
+    font-size: 12px;
+    background-color: #f2f2f2; /*Background*/
+    border-top: 1px solid #e4e4e4; /*Line at the middle*/
+}
+
+footer .footer-top {
+    height: 100px;
+    width: 100%;
+    border-style: none; /*Remove border style (Linea de enmedio saldria arriba tambien)*/
+}
+
+footer .footer-top p {
+    height: 70px;
+    padding: 0 30px;
+    color: #6f7172;
+    font-size: 15px;
+}
+
+footer .footer-bottom ul {
+    margin: 10px;
+    list-style: none; /*Remove list style (puntos)*/
+    display: flex;
+    padding: 0 20px; /*Modifie padding*/
+} 
+
+footer .footer-bottom-left {
+    justify-content: left;
+}
+
+footer .footer-bottom-right {
+    justify-content: right;
+}
+
+footer .footer-bottom ul li a {
+    margin: 10px;
+    color: #6f7172;
+    font-size: 15px;
+}
